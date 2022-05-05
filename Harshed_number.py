@@ -8,4 +8,4 @@ while(num>0):
 if n%sum==0:
     print("True")
 else:
-    print("False")
+    print("False") 

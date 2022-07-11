@@ -1,12 +1,7 @@
-x,y=map(int,input().split())
-g=0
-if x>y:
-    g=x
-else:
-    g=y
-    while 1:
-        if g%x==0 and g%y==0:
-            lcm=g
-            print(lcm)
-            break
-        g+=1
+n,m=map(int,input().split())
+c=max(n,m)
+while True:
+    if c%n==0 and c%m==0:
+        print(c)
+        break
+    c+=1

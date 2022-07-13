@@ -9,4 +9,4 @@ while(n>0):
 if(s>0):
     print(rev)
 else:
-    print(-rev)
+    print(-rev) 

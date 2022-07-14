@@ -1,8 +1,9 @@
 n=int(input())
-max=0
+i=0
+lar=0
 while n>0:
-    dig=n%10
-    if max<dig:
-        max=dig
+    i=n%10
+    if lar<i:
+        lar=i
     n=n//10
-print(max)
+print(lar)

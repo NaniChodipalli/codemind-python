@@ -1,9 +1,9 @@
-n=int(input())
 n1=0
 n2=1
-n3=0
-for i in range(1,1+n,1):
-    print(n1,end=' ')
-    n3=n1+n2
-    n1=n2
-    n2=n3
+num=int(input())
+print("0 1",end=' ')
+for i in range(2,num,1):
+     n3=n1+n2
+     print(n3,end=' ')
+     n1=n2    
+     n2=n3   

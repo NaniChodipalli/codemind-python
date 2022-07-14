@@ -1,7 +1,6 @@
-i,j=map(int,input().split())
-while(i!=j):
-  if(i>j):
-     i=i-j
-  else:
-     j=j-i
-print(i)
+a,b=map(int,input().split())
+gcd=0
+for i in range(1,a and b):
+    if a%i==0 and b%i==0:
+        gcd=i
+print(gcd)

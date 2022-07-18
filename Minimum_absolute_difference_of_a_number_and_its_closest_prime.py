@@ -1,24 +1,28 @@
-def prime(n):
-    if n==1:
-        return 0
-    for i in range(2,int(n**0.5)+1):
-        if n%i==0:
-            return 0
-    return 1
-n=int(input())
-temp=n
-for i in range(n,1,-1):
-    if prime(i):
-        p=i
+def is_prime(i):
+    c=0
+    for ii in range(2,i):
+        if i%ii==0:
+            c+=1
+    if c==0:
+        return i
+
+
+x = int(input())
+f = x
+for i in range(x,2,-1):
+    if is_prime(i):
+        n = i
         break
-while temp!=0:
-    if prime(temp):
-        q=temp
+while f!=0:
+    if is_prime(f):
+        m = f
         break
-    temp=temp+1
-if (n-p)<(q-n):
-    print(abs(n-p))
-elif (n-p)==(q-n):
-    print(abs(n-p))
+    f+=1
+n = x-n
+m = m-x
+if is_prime(x):
+    print('0')
+elif n<m:
+    print(n)
 else:
-    print(abs(n-q))
+    print(m)
